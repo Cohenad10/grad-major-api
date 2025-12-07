@@ -188,6 +188,41 @@
       </div>
     </fieldset>
 
+    <!-- Section 4 -->
+    <fieldset>
+      <legend>Section 4 — Personality (RIASEC)</legend>
+
+      <div class="question">
+        <label for="r1">Q16. How much do you enjoy hands-on, practical or technical tasks (e.g., working with equipment, hardware, or physical systems)? (R)</label>
+        <input type="number" id="r1" name="r1" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label for="i1">Q17. How much do you enjoy investigating complex problems, models, or research questions? (I)</label>
+        <input type="number" id="i1" name="i1" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label for="a1">Q18. How much do you enjoy designing interfaces, visual layouts, or creative digital content? (A)</label>
+        <input type="number" id="a1" name="a1" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label for="s1">Q19. How much do you enjoy helping others, mentoring, or supporting people directly? (S)</label>
+        <input type="number" id="s1" name="s1" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label for="e1">Q20. How much do you enjoy leading teams, making decisions, or driving projects forward? (E)</label>
+        <input type="number" id="e1" name="e1" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label for="c1">Q21. How much do you enjoy working with structured processes, documentation, and organized workflows? (C)</label>
+        <input type="number" id="c1" name="c1" min="1" max="5" required />
+      </div>
+    </fieldset>
+
     <button type="submit">Submit Survey</button>
     <div id="error" class="error"></div>
   </form>
@@ -223,6 +258,12 @@
         q13: parseInt(formData.get("q13")),
         q14: parseInt(formData.get("q14")),
         q15: parseInt(formData.get("q15")),
+        r1: parseInt(formData.get("r1")),
+        i1: parseInt(formData.get("i1")),
+        a1: parseInt(formData.get("a1")),
+        s1: parseInt(formData.get("s1")),
+        e1: parseInt(formData.get("e1")),
+        c1: parseInt(formData.get("c1")),
       };
 
       try {
